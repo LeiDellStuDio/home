@@ -124,7 +124,19 @@ input, select, textarea {
 	z-index: 2; /* 置顶 */
 }
 
-
+/* 隐藏在手机屏幕上 */  
+@media (max-width: 699px) {  
+    .daily-quote {  
+        display: none;  
+    }  
+}  
+  
+/* 在屏幕宽度大于或等于700px时显示 */  
+@media (min-width: 700px) {  
+    .daily-quote {  
+        display: block; /* 或者使用你需要的任何display值，如flex, inline-block等 */  
+    }  
+}
 
 /* Basic */
 
@@ -1198,3 +1210,5 @@ input, select, textarea {
     height: 5em;
   }
 }
+
+
