@@ -1211,4 +1211,25 @@ input, select, textarea {
   }
 }
 
+/* footer隐藏 */
 
+
+/* 隐藏移动端不需要的元素 */  
+@media (max-width: 768px) {  
+    .visible-desktop, .desktop-links {  
+        display: none;  
+    }  
+    .mobile-only {  
+        display: inline;  
+    }  
+}  
+  
+/* 显示桌面端需要的元素 */  
+@media (min-width: 769px) {  
+    .mobile-only {  
+        display: none;  
+    }  
+    .visible-desktop, .desktop-links {  
+        display: inline;  
+    }  
+}
